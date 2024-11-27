@@ -1,0 +1,174 @@
+/* App.css */
+
+/* Apply a smooth transition for background color changes */
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f0f0f5;
+  transition: background-color 0.3s ease;
+}
+
+/* AppBar Styles */
+.AppBar {
+  background-color: #3f51b5; /* Vibrant Blue color */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+.AppBar .MuiToolbar-root {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+h2 {
+  color: #fff;
+  font-size: 26px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+/* Buttons */
+button {
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+button:hover {
+  background-color: #424242;
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
+
+button:focus {
+  outline: none;
+}
+
+button .MuiButton-label {
+  color: white;
+}
+
+button.MuiButton-outlined {
+  border-color: #3f51b5;
+}
+
+button.MuiButton-outlined:hover {
+  border-color: #3f51b5;
+  background-color: #e0e0e0;
+}
+
+button.MuiButton-outlined .MuiButton-label {
+  color: #3f51b5;
+}
+
+/* Page Layout */
+.AppContent {
+  margin: 20px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.AppContent:hover {
+  box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.2);
+}
+
+
+h6 {
+  font-size: 18px;
+}
+
+/* Image Gallery */
+.AppImages {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.AppImages img {
+  border-radius: 8px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.AppImages img:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 6px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* AppBar Navigation Links */
+.MuiButton-root {
+  margin: 0 10px;
+}
+
+.MuiButton-root:hover {
+  background-color: #303f9f;
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+}
+
+/* Profile Icon and Dark Mode Toggle */
+.MuiIconButton-root {
+  transition: transform 0.3s ease;
+}
+
+.MuiIconButton-root:hover {
+  transform: scale(1.2);
+}
+
+/* Tooltip */
+.MuiTooltip-tooltip {
+  font-size: 14px;
+  background-color: #3f51b5;
+  color: white;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .AppImages {
+    flex-direction: column;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+}
+
+
+
+
+
+
+
+/* Light Mode */
+.light-mode {
+  background-color: #fff;
+  color: #000;
+}
+
+.light-mode .username {
+  color: #333 !important; /* Ensure user name text is visible in light mode */
+}
+
+/* Dark Mode */
+.dark-mode {
+  background-color: #121212;
+  color: #fff;
+}
+
+.dark-mode .username {
+  color: #fff !important; /* Ensure user name text is visible in dark mode */
+}
+
+body {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+h3, h2, p {
+  transition: color 0.3s ease;
+}
